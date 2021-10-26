@@ -42,4 +42,4 @@ class Solution(object):
                 l = mid + 1# shift l pointer 1 index to the right of the mid value
             else:# target is less than the mid value
                 r = mid - 1# shift r pointer 1 index to the left of the mid val
-        return nums[0]# if the target is not in the array
+        return -1# if the target is not in the array
