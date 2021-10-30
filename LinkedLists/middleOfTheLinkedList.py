@@ -24,3 +24,21 @@ Constraints:
 The number of nodes in the list is in the range [1, 100].
 1 <= Node.val <= 100
 """
+class Solution:
+ def middleNode(self, head):
+  len_list = 0
+  start = node = head
+  while start:
+   len_list += 1
+   start = start.next
+  middle = len_list // 2
+  counter = 0
+  while node:
+   if counter == middle:
+    return node
+   else:
+    counter += 1
+    node = node.next
+  return None 
+  
+  
