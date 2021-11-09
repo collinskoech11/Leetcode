@@ -34,6 +34,7 @@ n == image[i].length
 
 class Solution(object):
     def FloodFill(self, image, sr, sc, newColor):
+        image = [[1,1,1],[1,1,0],[1,0,1]]
         r_ls, c_ls = len(image), len(image[0])
         color = image[sr][sc]
 
@@ -54,5 +55,7 @@ class Solution(object):
 
 
         dfs(sr, sc)
+        if __name__ == '__main__':          
+            print(image)
         return image
 
