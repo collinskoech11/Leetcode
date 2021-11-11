@@ -31,7 +31,7 @@ Constraints:
 0 <= n <= 30
 """
 class Solution(object):
-  def fib(sefl, n):
+  def fib(self, n):
     
     if n == 0:
       return 0

@@ -43,7 +43,7 @@ class Solution(object):
       rsq = nums[r] * nums[r]
       
       if lsq <= rsq:
-        ans[insertLOc] = rsq
+        ans[insertLoc] = rsq
         r -= 1
         insertLoc -= 1
       else: 
