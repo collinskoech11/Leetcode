@@ -22,7 +22,7 @@ Constraints:
 s1 and s2 consist of lowercase English letters.
 """
 
-class Solution(Object):
+class Solution(object):
   def checkInclusion(self, s1,s2):
     if len(s1) > len(s2):
       return False

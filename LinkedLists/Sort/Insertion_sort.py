@@ -29,14 +29,14 @@ The number of nodes in the list is in the range [1, 5000].
 -5000 <= Node.val <= 500
 """
 
-class Solution(Object):
+class Solution(object):
   def isertionSortList(self, head):
     
     dummy_head =  ListNode()
     curr = head
     
     while curr:
-      prev_pointer = dumm_head
+      prev_pointer = dummy_head
       next_pointer = dummy_head.next
       
       while next_pointer:
