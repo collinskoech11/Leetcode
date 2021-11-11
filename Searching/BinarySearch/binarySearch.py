@@ -37,7 +37,7 @@ class Solution(object):
         while l <= r: #lpointer could be same as right pointer
             mid = l + (r - l)//2 #get the mid value using integer division
             if nums[mid] == target:
-                return mid:# target is at the mid value
+                return mid# target is at the mid value
             elif nums[mid] < target:# when target is greater than the mid val
                 l = mid + 1# shift l pointer 1 index to the right of the mid value
             else:# target is less than the mid value

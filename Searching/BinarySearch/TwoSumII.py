@@ -34,12 +34,15 @@ The tests are generated such that there is exactly one solution.
 """
 
 class Solution:
+  numbers = [2,7,11,15] 
+  target = 9
   def twoSum(self, numbers, target):
     """
     :type numbers: List[int]
     :type target: int
     :rtype: List[int]
     """
+    
     l, r = 0, len(numbers) - 1
     
     while l < r:
