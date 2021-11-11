@@ -43,4 +43,4 @@ class Solution(object):
         l += 1
       charSet.add(s[r])
       res = max(res, r - l + 1)
-return res
+    return res
