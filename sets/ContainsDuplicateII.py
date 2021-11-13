@@ -5,12 +5,11 @@ class Solution(object):
         :type k: int
         :rtype: bool
         """
-        a = {}
+        if len(nums) == len(set(nums)):
+            return False
         for i in range(len(nums)):
-            current = nums[i]
-            if current in a and k>=1-a[current]:
-                return True
-            else:
-                a[current]=i
-        return False
+            for j in range(i+1, len(nums)):
+                if nums[i]==nums[j] and j-i<=k and i!=j:
+                    return True
+        return False 
                 
