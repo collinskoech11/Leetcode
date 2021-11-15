@@ -28,13 +28,11 @@ Input: letters = ["c","f","j"], target = "j"
 Output: "c"
 """
 class Solution:
-  def nextGratestLetters(self, letters: List[str], tartget: str) -> str:
-    l,r = 0, len(letters) - 1
-    while l < r:
-      mid = (r-l)//2 + 1
-      if letters[mid] <= target:
-        l = mid + 1
-      else:
-        r = mid
+    def nextGreatestLetter(self, letters: List[str], target: str) -> str:
+        for letter in letters:
+            if letter > target:
+                return letter
+            elif letters[-1] <= target:
+                return letters[0]
         
-   return letters[l%len(letters)]
+        
