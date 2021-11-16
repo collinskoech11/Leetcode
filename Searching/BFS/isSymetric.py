@@ -22,7 +22,7 @@ The number of nodes in the tree is in the range [1, 1000].
  
 """
 class Solution:
-  def isSymetric(self, root: OPtional[TreeNode]) -> bool:
+  def isSymetric(self, root: Optional[TreeNode]) -> bool:
     if root is None:
       return True
     return self. ismirror(root.left, root.right)
