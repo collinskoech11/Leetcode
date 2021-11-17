@@ -30,14 +30,11 @@ Only one valid answer exists."""
 
 class Solution(object):
     def twoSum(self, nums, target):
-        seen={}
-
-        for index, num in enumerate(nums):
-            other = target - num
-
-            if other in seen :
-                return[seen[other],index]
-        return[]
+        for i in range(len(nums)):
+            diff = target-nums[i]
+            if diff in nums[i+1:]:
+                index = nums[i+1:].index(diff)+i+1
+                return [i, index]
         """ 
         :type nums: list[int]
         :type target: int
