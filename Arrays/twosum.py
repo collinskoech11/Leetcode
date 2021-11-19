@@ -40,3 +40,14 @@ class Solution(object):
         :type target: int
         :type: List[int]
         """
+        
+# Brute force solution
+
+# use two for loops to go through all elements 
+class Solution(object):
+    def TwosSum(self, nums, target):
+        for i in range(len(nums)):
+            for j in range(i+1, len(nums)):
+                 sum == nums[i] + nums[j]
+                 if sum == target:
+                     return [i, j] # return indices of the elements 
