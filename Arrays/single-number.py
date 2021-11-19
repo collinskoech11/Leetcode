@@ -45,5 +45,7 @@ for n  in c:
    if c[n] == 1:
       return n 
 
+#sample soln 
 
+return 2*sum(set(nums)) - sum(nums)
         
