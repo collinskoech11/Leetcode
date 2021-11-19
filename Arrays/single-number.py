@@ -36,4 +36,14 @@ class Solution:
                 del counts[n]
                 
         return  list(counts.keys())[0]
+       
+       
+# OPtimal solution
+
+c = Counter(nums)
+for n  in c:
+   if c[n] == 1:
+      return n 
+
+
         
