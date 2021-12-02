@@ -32,5 +32,5 @@ There will be at least one word in s.
 class Solution(object):
   def lengthOfLastWord(self, s):
     if s.split():
-      return len(s.split()[-1])
+      return len(s.split()[-1]) #length of last element of s after split
     return 0
