@@ -1,3 +1,7 @@
+"""
+Given an integer array return True if the array has any duplicate digits 
+"""
+
 class Solution(object):
   def ContainsDuplicate():
     seen = set()
