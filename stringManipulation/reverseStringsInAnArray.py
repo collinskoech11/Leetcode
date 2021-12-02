@@ -23,6 +23,6 @@ All the words in s are separated by a single space.
 """
 class Solution(object):
   def reverseWords(self, s):
-    res = s.split(' ')
-    reversedString = " ".join([i[:-1] for i in res])
+    res = s.split(' ')#split s at each word (list)
+    reversedString = " ".join([i[:-1] for i in res])#reverse each element in the list
     return reversedString
