@@ -30,8 +30,8 @@ Constraints:
 class Solution(object):
   def reverse(self, x):
     limit = 214783648
-    sign = -1 if x < 0 else 1
-    x *= sign 
+    sign = -1 if x < 0 else 1 #asign sign value +,-
+    x *= sign #strip negative sign from integer
     #remove leading 0 in the reversed integer
     while x:
       if x % 10 == 0:
@@ -39,12 +39,12 @@ class Solution(object):
       else:
         break
     #string manipulation
-    x = str(x)
-    lst = list(x)
-    lst.reverse()
-    x = "".join(lst)
-    x = int(x)
+    x = str(x)# convert x to string
+    lst = list(x)# convert x to list
+    lst.reverse()#reverse
+    x = "".join(lst)#back to string 
+    x = int(x)#back to integer
     if x > limit:
-      return sign*x
+      return sign*x#get back negative sign if any
     else:
       return 0
