@@ -25,7 +25,7 @@ class Solution:
   def isSymetric(self, root: Optional[TreeNode]) -> bool:
     if root is None:
       return True
-    return self. ismirror(root.left, root.right)
+    return self.ismirror(root.left, root.right)
   
   def ismirror(self, leftroot, rightroot):
     if leftroot and rightroot:
