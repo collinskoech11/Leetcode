@@ -32,7 +32,7 @@ Follow up: A linked list can be reversed either iteratively or recursively. Coul
 
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        if no head:
+        if not head:
             return None 
         
         newHead = head
@@ -41,4 +41,15 @@ class Solution:
             head.next.next = head
         head.next = None
         
-        return nrewHead
+        return newHead
+    
+    
+class SolutionTwo:
+    def reverseList(self, head: Optional[ListNode]) -> OPtional[ListNode]:
+        prev, curr = None, head
+        while curr:
+            nxt = curr.next
+            curr.next = prev
+            prev = curr
+            curr = nxt
+        return prev
