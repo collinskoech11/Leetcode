@@ -21,4 +21,11 @@ class Solution:
 #start with targetSum then subtract the value of the node from the targetSum return True if the difference is 0
 class SolutionTwo:
     def hasPathSum(self, root:OPtional[TreeNode], targetSum: int) -> bool:
+        if not root:
+            return False
+        targetSum -= node.val
+        if not root.left and not root.right:
+            return targetSum==0
+        else:
+            return self.hasPathSum(root,left,targetSum) or self.hasPathSum(root.right,targetSum)
         
