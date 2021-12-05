@@ -8,3 +8,4 @@
 | **Peak index in a moutain array** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
 | **Product of array except self** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
 | **Two sum** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
+| **Detect Capital** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
