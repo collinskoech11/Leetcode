@@ -5,7 +5,8 @@ class Solution:
         offset = 1
         
         for i in range(1, n+ 1):
-            of offset * 2 == i:
+            if offset * 2 == i:
                 offset = 1
+            output[i] = 1 + output[i - offset]
                 
         return output
