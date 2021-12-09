@@ -9,3 +9,5 @@
 | **Product of array except self** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
 | **Two sum** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
 | **Detect Capital** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
+| **Counting Bits** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
+| **Merge Two Binary Trees** | [Accepted](solutions/202.%20Happy%20Number.md) |  Reviewed |
