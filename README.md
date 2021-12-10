@@ -36,3 +36,4 @@
 | **Product of array except self** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
 | **Find the dupliacate number** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
 | **Find all duplicates in an array** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
+| **Rotate Image** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
