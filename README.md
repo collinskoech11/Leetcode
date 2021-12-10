@@ -37,3 +37,5 @@
 | **Find the dupliacate number** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
 | **Find all duplicates in an array** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
 | **Rotate Image** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
+| **Invert Binary Tree* | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
+| **Maximum depth of binary tree** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
