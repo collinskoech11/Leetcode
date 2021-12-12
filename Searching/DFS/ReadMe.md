@@ -8,5 +8,5 @@
 | **Minimum depth of binary tree** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
 | **Path sum** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
 | **lowest comon ancestor** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
-| **Diameter of a binary tree** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
+| **Diameter of a binary tree** | [Accepted](diameter-of-a-binary-tree.py) | Not Reviewed |
 
