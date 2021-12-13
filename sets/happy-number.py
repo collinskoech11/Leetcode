@@ -1,3 +1,7 @@
+"""a happy number is one where the sum of the swuares of its digits is equal to one 
+e.g 19 == (1^2 + 9^2 = 82) -> (8^2 + 2^2 = 68) -> (6^2 + 8^2 = 100) -> (1^2 + 0^2 + 0^2 = 1)  ==> 19 is a happy number
+"""
+
 class Solution:
     def happyNumber(self, n:int) -> bool:
         visit = set()
