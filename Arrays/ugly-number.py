@@ -1,3 +1,13 @@
+"""
+an ugly number is a positive integerwhose prime factors are limited to 2,3,5
+return True if n is an ugly number
+
+n=6 True
+6=2*3
+n=14 False
+14=7*2 
+"""
+
 class Solution:
     def uglyNumber(self, n:int):
         only =[2,3,5]
