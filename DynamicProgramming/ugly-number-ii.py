@@ -1,4 +1,6 @@
-"""return the nth ugly number
+"""
+an ugly number is a positive integer whose prime factors are imited to 2,3,5
+return the nth ugly number
 [1,2,3,4,5,6,8,9,10,12]
                      ^
                      |
