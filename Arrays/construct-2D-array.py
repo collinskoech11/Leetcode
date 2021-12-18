@@ -21,3 +21,13 @@ class Solution:
                 itr += 1
             answer.append(arr)
         return answer
+"""Solution 2"""
+class SolutionTwo:
+    def construct2DaArray(self, original:List[int], n:int, m:int):
+        N = len(original)
+        if m*n != N:
+            return []
+        ans = []
+        for i in range(n):
+            ans.append(original[i*n:i*n +n]
+        return ans 
