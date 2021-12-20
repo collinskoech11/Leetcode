@@ -14,17 +14,19 @@ return the nth ugly number
 the function returns the nth ugly number
 
 """
-while len(ugly) < n:
-            # hint 2, hint 4
-            #2: the next ugly number can be derived from multiplying the prev smaller ugly nimber by either 2,3 or 5
-            #4: 
-            while ugly[two]*2 <= ugly[-1]:
-                two += 1
-            while ugly[three]*3 <= ugly[-1]:
-                three+=1
-            while ugly[five]*5 <= ugly[-1]:
-                five+=1
-            ugly.append(min(ugly[two]*2, ugly[three]*3, ugly[five]*5))
+class Solution:
+    def nthUglyNumber(self, n: int) -> int:
+        while len(ugly) < n:
+                    # hint 2, hint 4
+                    #2: the next ugly number can be derived from multiplying the prev smaller ugly nimber by either 2,3 or 5
+                    #4: 
+                    while ugly[two]*2 <= ugly[-1]:
+                        two += 1
+                    while ugly[three]*3 <= ugly[-1]:
+                        three+=1
+                    while ugly[five]*5 <= ugly[-1]:
+                        five+=1
+                    ugly.append(min(ugly[two]*2, ugly[three]*3, ugly[five]*5))
 """class Solution:
     def nthUglyNumber(self, n: int) -> int:
         ugly = [1]
