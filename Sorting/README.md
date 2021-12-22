@@ -1,4 +1,4 @@
 # Sorting
-| Input Type | Category | Review status |
+| Problem | My Solution | Review status |
 | :-- | :-- | :-- |
 | **Majority Element** | [Accepted](Sorting/majority-element) | Reviewwed |
