@@ -7,20 +7,20 @@
 
 class Solution:
     def backspaceStringCompare(self, S: str, T:str) -> bool:
-        SS = []
-        TT = []
-        for i in S:
-            if i == "#":
+        SS = []# create an empty array for s
+        TT = []# create an empty array for t
+        for i in S:#for any element in s
+            if i == "#":#if the current element is #
                 if len(SS) >= 1:
-                    SS.pop()
+                    SS.pop()#pop the last edded element from the created array if ts length is greater than one
             else:
-                SS.append(i)
-        for i in T:
-            if i == "#":
+                SS.append(i)#if element at i isn't # apend it to the array
+        for i in T:#for any element in t
+            if i == "#":#if the current element is #
                 if len(TT) >= 1:
-                    TT.pop()
+                    TT.pop()#pop the last edded element from the created array if ts length is greater than one
             else:
-                TT.append(i)
+                TT.append(i)#if element at i isn't # apend it to the array
                 
-        return SS == TT 
+        return SS == TT #return true if the two created arrays are the same
            
