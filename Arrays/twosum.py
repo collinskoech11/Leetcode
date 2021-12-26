@@ -48,6 +48,5 @@ class Solution(object):
     def TwosSum(self, nums, target):
         for i in range(len(nums)):
             for j in range(i+1, len(nums)):
-                 sum == nums[i] + nums[j]
-                 if sum == target:
+                 if target == nums[i] + nums[j]:
                      return [i, j] # return indices of the elements 
