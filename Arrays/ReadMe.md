@@ -12,7 +12,7 @@
 | **remove duplicates in an sorted list ii** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
 | **single number iii** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
 | **sort-colors** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
-| **two sum** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
+| **two sum** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
 | **Rotate Image** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
 | **backspace string compare** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
 | **Spiral Matrix** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
