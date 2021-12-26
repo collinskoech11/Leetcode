@@ -32,7 +32,7 @@ class Solution(object):
     def twoSum(self, nums, target):
         for i in range(len(nums)):
             diff = target-nums[i]
-            if diff in nums[i+1:]:
+            if diff in nums[i+1:]:#find diff in the int list excluding the element used to calculate the difference 
                 index = nums[i+1:].index(diff)+i+1
                 return [i, index]
         """ 
@@ -43,10 +43,26 @@ class Solution(object):
         
 # Brute force solution
 
-# use two for loops to go through all elements 
+# use two for loops to traverse all elements 
 class Solution(object):
     def TwosSum(self, nums, target):
         for i in range(len(nums)):
             for j in range(i+1, len(nums)):
                  if target == nums[i] + nums[j]:
                      return [i, j] # return indices of the elements 
+         
+         
+#Binary Search Solution 
+class Solution:
+    def TwoSum(self, nums:List[int],target:int)-> int:
+         l,r = 0, len(nums) - 1
+                while l < r:
+                    mid = (r -l)//2 + l 
+                    if l == mid:
+                        mid+=1
+                    else:
+                        if target == (nums[l]+nums[mid]):
+                            return l,mid
+                        else:
+                            l=mid+1
+                return 0
