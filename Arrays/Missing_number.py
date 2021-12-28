@@ -34,12 +34,12 @@ All the numbers of nums are unique.
 """
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
-        nums.sort()
-        res = len(nums)
+        nums.sort() # sort the elements in the array 
+        res = len(nums) # set res as the length of elements in teh array 
         
-        for i in range(len(nums)):
-            res += (i - nums[i])
-        return res
+        for i in range(len(nums)):#travrse through the elements in the array
+            res += (i - nums[i])#add the difference between the element and its index to the previously defined res
+        return res#return the final value of res
 # Solution 2
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
