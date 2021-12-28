@@ -27,15 +27,15 @@ Follow up: Could you do it in O(n) time and O(1) space?
 class Solution:
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
         """array solution"""
-        nums= []
+        nums= []#create an empty array nums 
         while head:
-            nums.append(head.val)
-            head = head.next
+            nums.append(head.val)#apend the current head
+            head = head.next #go to the next element in the linked list
             
-        l,r = 0, len(nums) - 1
+        l,r = 0, len(nums) - 1 #ceate left and right pointers
         while l<=r:
             if nums[l] != nums[r]:
-                return False
-            l+=1
-            r-=1
-        return True
+                return False#return false if the element at the right and left pointers are not the same (the linked list is not a palid=ndrome 
+            l+=1#move left pointer one step to the right
+            r-=1#move the right pointer one step towards the left
+        return True# if l > or = to r the linked list is a palindrome after traversing through all the elements  
