@@ -1,3 +1,16 @@
+"""
+Given a string S of length N which is the English representation of any number of digits in the range [0 – 9] in jumbled format. The task is to find the digits from this representation. 
+Note: Print digits in any order
+
+Input: S = “owoftnuoer”
+Output: 124
+Explanation: The digits here are jumbled form of one, two and four. Therefore, the required output can be 124 or 421 or 214 etc.
+
+Input: S = “zesxrionezoreo”
+Output: 0016
+"""
+
+
 for line in sys.stdin:
     if "1" in line:
         stri = "reuonnoinfe"
