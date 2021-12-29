@@ -49,11 +49,11 @@ class Solution:
  #Arrays Soluttion 
 class Soution:
     def sortedSquares(self, nums):
-        ans = []
-        if len(nums) == 0:
+        ans = []#initialize an empty array
+        if len(nums) == 0:#if len nums is 0 return an empty array
             return []
-        for i in nums:
-            ans.append(i*i)
-        ans.sort()
+        for i in nums:#for elements n nums 
+            ans.append(i*i)#append square of i
+        ans.sort()#sort ans 
         return ans
     
