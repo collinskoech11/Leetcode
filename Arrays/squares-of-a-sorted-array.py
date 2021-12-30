@@ -56,4 +56,11 @@ class Soution:
             ans.append(i*i)#append square of i
         ans.sort()#sort ans 
         return ans
+ #Mirror Solution
+ class Solution:
+    def sortedSquares(self, nums):
+        product = [x*y for x,y in zip(nums,nums)]#square all elements in nums using a zip function 
+        product.sort()
+        return product
+   
     
