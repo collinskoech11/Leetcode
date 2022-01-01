@@ -9,7 +9,7 @@
 | **Palinrome Linked list** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
 | **Peak index in a mountain array** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
 | **Product of an array except self** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
-| **remove duplicates in an sorted list ii** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
+| **remove duplicatesa sorted array** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
 | **single number iii** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
 | **sort-colors** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
 | **two sum** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
