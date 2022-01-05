@@ -8,8 +8,8 @@
 ### * each time we shift the L or R pointer towards the location of x
 ### * if r becomes < than l then the element is not in the array
 `
-l,r = 0, len(nums)-1
-    if r >= l: # Check base case
+    l,r = 0, len(nums)-1
+    if r >= l:
  
         mid = l + (r - l) // 2
  
