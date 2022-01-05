@@ -74,16 +74,19 @@
 ### At Iteration 1, 
  
 `Length of array = n`
-`At Iteration 2, `
+
+#### At Iteration 2, 
  
 `Length of array = n⁄2`
-`At Iteration 3, `
+
+#### At Iteration 3, 
  
 `Length of array = (n⁄2)⁄2 = n⁄22`
-`Therefore, after Iteration k, `
+
+#### Therefore, after Iteration k, 
  
 `Length of array = n⁄2k`
-`Also, we know that after `
+
  
 
 #### After k iterations, the length of array becomes 1
@@ -96,10 +99,10 @@
 #### Applying log function on both sides: 
  
 `=> log2 (n) = log2 (2k)`
-`> log2 (n) = k log2 (2)`
+`=> log2 (n) = k log2 (2)`
  
 
-`s (loga (a) = 1) `
+`as (loga (a) = 1) `
 
 #### therefore, 
  
