@@ -126,5 +126,5 @@
  ##### b) preOrder(Root, left, right): 1 2 4 5 3
  ##### c) PostOrder(left, right, root): 4 5 2 3 1
  
- #### Time Complexity: O(n)
+ ## Time Complexity: O(n)
 #### Auxiliary Space: If we don’t consider size of stack for function calls then O(1) otherwise O(n)
