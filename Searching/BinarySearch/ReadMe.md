@@ -1,4 +1,4 @@
-# Binary Searc
+# Binary Search qns and solutions
 | Question | Acceptance | Review status |
 | :-- | :-- | :-- |
 | **Binary Search tree** | [Accepted](Searching/) | Reviewed |
