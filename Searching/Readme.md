@@ -7,7 +7,7 @@
 ### iv) if x is smaller than the middle element we traverse through the left side 
 ### * each time we shift the L or R pointer towards the location of x
 ### * if r becomes < than l then the element is not in the array
-`   l,r = 0, len(nums)-1
+    l,r = 0, len(nums)-1
     if r >= l:
  
         mid = l + (r - l) // 2
@@ -28,5 +28,5 @@
  
     else:
         # Element is not present in the array
-        return -1`
+        return -1
 # Depth First Search
