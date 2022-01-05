@@ -109,4 +109,22 @@
 `=> k = log2 (n)`
 ####  Binary Search Algorithm whose complexity is O(log n). 
 # Depth First Search
-### It is an algorithm for traversing or searching tree or graph data structures. the algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch befire backtracking  
+### DFS is technique used for traversing tree or graph. Here backtracking is used for traversal. In this traversal first the deepest node is visited and then backtracks to it’s parent node if no sibling of that node exist. 
+
+## DFS Traversal of a Graph vs Tree
+##### In graph, there might be cycles and dis-connectivity. Unlike graph, tree does not contain cycle and always connected. So DFS of a tree is relatively easier. We can simply begin from a node, then traverse its adjacent (or children) without caring about cycles. And if we begin from a single node (root), and traverse this way, it is guaranteed that we traverse the whole tree as there is no dis-connectivity,
+
+## Example
+                 (1)
+               /     \
+             (2)     (3)
+            /   \    
+          (4)   (5)
+          
+ #### Therefore in depth first search Traversal of this tree will be 
+ ##### a) inOrder(left, root, right): 4 2 5 1 3
+ ##### b) preOrder(Root, left, right): 1 2 4 5 3
+ ##### c) PostOrder(left, right, root): 4 5 2 3 1
+ 
+ #### Time Complexity: O(n)
+#### Auxiliary Space: If we don’t consider size of stack for function calls then O(1) otherwise O(n)
