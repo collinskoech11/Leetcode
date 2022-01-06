@@ -24,7 +24,7 @@ nums is sorted in non-decreasing order.
 
 """
 #Binary Search Solution
-class Solution:
+class SolutionBinarySearch:
     def sortedSquares(self, nums):
         if len(nums) == 0:
             return []
@@ -47,7 +47,7 @@ class Solution:
                     inserLoc -= 1
             return ans 
  #Arrays Soluttion 
-class Soution:
+class SoutionForLoop:
     def sortedSquares(self, nums):
         ans = []#initialize an empty array
         if len(nums) == 0:#if len nums is 0 return an empty array
@@ -57,10 +57,17 @@ class Soution:
         ans.sort()#sort ans 
         return ans
  #Mirror Solution
- class Solution:
+ class SolutionMirror:
     def sortedSquares(self, nums):
         product = [x*y for x,y in zip(nums,nums)]#square all elements in nums using a zip function 
         product.sort()
         return product
-   
+ #Numpy solution
+ class Solution:
+    def sortedSquares(self, nums):
+        import numpy
+        nums = list(numpy.array(nums)**2)
+        nums.sort()
+        return nums
+  
     
