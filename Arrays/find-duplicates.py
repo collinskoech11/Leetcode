@@ -2,9 +2,8 @@
 There is one repeated element e=return the repeated element 
 
 
-Time complexity
-O(n) travesing through all elements in the array 
-Space complexity
+Space complexity should be O(1) - constant space.
+Time complexity should be less than O(n^2).
 
 """
 class Solution:
