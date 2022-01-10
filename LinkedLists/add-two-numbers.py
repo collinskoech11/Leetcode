@@ -36,11 +36,22 @@ It is guaranteed that the list represents a number that does not have leading ze
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         dummy = ListNode(0)
-        currwnt, carry = dummy , 0
+        current, carry = dummy , 0
         
         while l1 or l2:
-            val = l1 or l2:
-                val = carry 
-                if l1:
-                    val += l1.val
+            val = carry 
+            if l1:
+                val += l1.val
+                l1 = l1.next
+            if l2:
+                val += l2.val
+                l2 = l2.next
+            carry, val = val//10, val % 10
+            current.next = ListNode(val)
+            current = current.next
+            
+        if carry == 1:
+            current.next = ListNode(1)
+            
+        return dummy.next
         
