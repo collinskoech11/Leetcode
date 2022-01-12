@@ -7,3 +7,5 @@ sorted | unsorted
 ## First iteration is to shift 6 to the sorted side and compare it to the elements that are in the sorted side 
 [2,6, | 5,1,3,4] -> since they are in the correct order we move to the next iteration
 ## Second Iteration shifts 5 to sorted side 
+[2,6,5, | 1,3,4] -> we then check if 5 has been placed correctly
+[2,5,6, | 1,3,4] -> since it isnt we shi
