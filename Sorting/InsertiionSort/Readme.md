@@ -25,3 +25,12 @@ sorted | unsorted <br/>
 [1,2,3,4,5,6 | ] -> since 4 is smaller than 5 we swap the two(4,5)<br/>
 
 ## Our array is now fully sorted since the unsorted part is empty
+def insertion_sort(arr):
+    for i in range(1,len(arr)):
+        j = i
+        while arr[j-1] > arr[j] and j>0:
+            arr[j-1],arr[j] = arr[j], arr[j-1]
+            j -= 1
+arr = [2,6,5,1,3,4]
+insertion_sort(arr)
+print(arr)
