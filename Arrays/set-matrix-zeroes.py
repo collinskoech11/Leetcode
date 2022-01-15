@@ -18,7 +18,7 @@ class Solution:
                         
         for r in range(1, ROWS):
             for c in range(1, COLS):
-                if matrix[0][r] == 0 or matrix[r][0] == 0:
+                if matrix[0][c] == 0 or matrix[r][0] == 0:
                     matrix[r][c]
                     
         if matrix[0][0] == 0:
@@ -27,5 +27,5 @@ class Solution:
             
         if rowZero:
             for c in range(COLS):
-                MATRIX[0][C] = 0
+                matrix[0][c] = 0
         
