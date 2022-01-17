@@ -69,5 +69,11 @@ class SoutionForLoop:
         nums = list(numpy.array(nums)**2)
         nums.sort()
         return nums
+#lambda function solution
+class Solution:
+    def sortedSquares(self, nums):
+        new_list = list(map(lambda x: x ** 2 , nums))
+        new_list.sort()
+        return new_list
   
     
