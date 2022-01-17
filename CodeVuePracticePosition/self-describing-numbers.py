@@ -20,7 +20,7 @@ def isSelfDescriptiveNumber(num):
             temp = ord(s[j]) - ord('0')
             if (temp == i):
                 count += 1
-         if (count != b):
+        if (count != b):
             return False
     return True
 
