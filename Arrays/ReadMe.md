@@ -17,6 +17,7 @@
 | **backspace string compare** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
 | **Spiral Matrix** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
 | **squares of a sorted array** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
+| **three sum** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
 
 
 

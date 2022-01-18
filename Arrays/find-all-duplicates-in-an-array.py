@@ -27,7 +27,7 @@ n == nums.length
 Each element in nums appears once or twice.
 """
 
-
+#d.collections counter
 class Solution:
     def findDuplicates(self, nums: List[int]) -> List[int]:
         return [elem for elem, count in Counter(nums).items() if count == 2]
@@ -37,7 +37,8 @@ class Solution:
    
    
    #solution using set 
-   
+   class Solution:
+      def findDuplicates(self, nums: LIst[int]) -> List[int]:
         seen = set()
                 seen_add = seen.add
                 # adds all elements it doesn't know yet to seen and all other to seen_twice
