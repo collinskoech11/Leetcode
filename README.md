@@ -1,12 +1,12 @@
 # Basic Concepts for Coding Interviews 
 | Data Structures | Algorithms | Concepts |
 | :-- | :-- | :-- |
-| [Linked Lists](Linked Lists/) | [Breadth First Search](Searching/) | [Bit Manipulation](Searching/) |
-| [Trees Tries & Graphs](Linked Lists/) | [Depth First Search](Searching/) | [Memory(Stack vs Heap)](Searching/) |
-| [Stacks & Queues](Linked Lists/) | [Binary Search](Searching/) | [Recursion](Searching/) |
-| [Heaps](Linked Lists/) | [Merge Sort](Searching/) | [Duynamic Progrmming](Searching/) |
-| [Vectors/ArrayLists](Linked Lists/) | [Quick Sort](Searching/) | [Big O Time & Space](Searching/) |
-| [Hash Tables](Linked Lists/) |  |  |
+| [Linked Lists](Linked%20Lists/) | [Breadth First Search](Searching/) | [Bit Manipulation](Searching/) |
+| [Trees Tries & Graphs](Linked%20Lists/) | [Depth First Search](Searching/) | [Memory(Stack vs Heap)](Searching/) |
+| [Stacks & Queues](Linked%20Lists/) | [Binary Search](Searching/) | [Recursion](Searching/) |
+| [Heaps](Linked%20Lists/) | [Merge Sort](Searching/) | [Duynamic Progrmming](Searching/) |
+| [Vectors/ArrayLists](Linked%20Lists/) | [Quick Sort](Searching/) | [Big O Time & Space](Searching/) |
+| [Hash Tables](Linked%20Lists/) |  |  |
 
 
 # Leetcode Solution guidelines 
