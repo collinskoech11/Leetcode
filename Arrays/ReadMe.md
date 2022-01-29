@@ -1,23 +1,5 @@
 # Arrays
-| Problem | My Solution | Review status |
-| :-- | :-- | :-- |
-| **Construct a 2D array** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
-| **Find all duplicates in an array** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
-| **Find all numbers dissapeared in an array** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
-| **find peak element** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
-| **Missing Number** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
-| **Palinrome Linked list** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
-| **Peak index in a mountain array** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
-| **Product of an array except self** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
-| **remove duplicates from a sorted array** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
-| **single number iii** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
-| **sort-colors** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
-| **two sum** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
-| **Rotate Image** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
-| **backspace string compare** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
-| **Spiral Matrix** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
-| **squares of a sorted array** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
-| **three sum** | [Accepted](solutions/202.%20Happy%20Number.md) | Not Reviewed |
-
-
-
+### 1D array example nums = [1,2,3,4,5] (also nums: list[int])
+## indexing 
+nums[0] = 1
+nums[-1] = 5
