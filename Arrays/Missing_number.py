@@ -33,7 +33,7 @@ n == nums.length
 All the numbers of nums are unique.
 """
 class Solution:
-    def missingNumber(self, nums: List[int]) -> int:
+    def missingNumber(self, nums: list) -> int:
         nums.sort() # sort the elements in the array 
         res = len(nums) # set res as the length of elements in teh array 
         
@@ -42,5 +42,5 @@ class Solution:
         return res#return the final value of res
 # Solution 2
 class Solution:
-    def missingNumber(self, nums: List[int]) -> int:
+    def missingNumber(self, nums: list) -> int:
         return len(nums)*(len(nums)+1)//2- sum(nums)
