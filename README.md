@@ -24,4 +24,7 @@
 | **Common Strings** | [Map, Trie](Searching/) | :x: |
 | **Otherwise** | [Map/Set](Searching/) | :white_check_mark: |
 
+# Time ad Space Complexity
+### quanitfies the time taken by an algorithm to run as a function of the length of the input (not actual execution time of the machine on which the algorithms run on )
 
+### assume constant time(c) is taken to run one operation [Ref](https://www.geeksforgeeks.org/time-complexity-and-space-complexity/)
