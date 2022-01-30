@@ -9,7 +9,25 @@
 | [Hash Tables](Linked%20Lists/) |  |  |
 
 
-# Leetcode Solution guidelines 
+# Time and Space Complexity
+### quanitfies the time taken by an algorithm to run as a function of the length of the input (not actual execution time of the machine on which the algorithms run on )
+
+### assume constant time(c) is taken to run one operation [Ref](https://www.geeksforgeeks.org/time-complexity-and-space-complexity/)
+
+| Length of input | Worst Accepted Algorithm | 
+| :-- | :-- | 
+| **<= [10..11]** | [O(N),O(N^6)] | 
+| **<= [15..18]** | [O(2^N*N^2)] | 
+| **<= [18..22]** | [O(2^N*N)] | 
+| **<= [100]** | [O(N^4)] | 
+| **<= [400]** | [O(N^3)] | 
+| **<= [2000]** | [O(N^2*logN)] | 
+| **<= 10k** | [O(N^2)] | 
+| **<= [1M]** | [O(N*logN)] | 
+| **<= [100M]** | [O(N),O(logN),O(1)] | 
+
+
+# Solution guidelines 
 | Input Type | Category | Review status |
 | :-- | :-- | :-- |
 | **Input array is sorted** | [Binary Search, Two Pointers](Searching/) | :heavy_check_mark: |
@@ -24,11 +42,3 @@
 | **Common Strings** | [Map, Trie](Searching/) | :x: |
 | **Otherwise** | [Map/Set](Searching/) | :white_check_mark: |
 
-# Time and Space Complexity
-### quanitfies the time taken by an algorithm to run as a function of the length of the input (not actual execution time of the machine on which the algorithms run on )
-
-### assume constant time(c) is taken to run one operation [Ref](https://www.geeksforgeeks.org/time-complexity-and-space-complexity/)
-
-| Length of input | Worst Accepted Algorithm | 
-| :-- | :-- | 
-| **<= [10..11]** | [O(N),O(N^6)] | 
