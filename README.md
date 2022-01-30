@@ -11,7 +11,8 @@
 
 
 # [Time and Space Complexity](https://www.hackerearth.com/practice/basic-programming/complexity-analysis/time-and-space-complexity/tutorial/)
-### Time Complexity -> quanitfies the time taken by an algorithm to run as a function of the length of the input (not actual execution time of the machine on which the algorithms run on )
+### Time Complexity -> 
+##### quanitfies the time taken by an algorithm to run as a function of the length of the input (not actual execution time of the machine on which the algorithms run on )
 
 ### assume constant time(c) is taken to run one operation [Ref](https://www.geeksforgeeks.org/time-complexity-and-space-complexity/)
 
@@ -27,7 +28,9 @@
 | **<= [1M]** | [O(N*logN)] | 
 | **<= [100M]** | [O(N),O(logN),O(1)] | 
 
-### Space Complexity -> quantifies the amount of space or memory taken by an algorithm to run as a function of the length of the input
+### Space Complexity -> 
+
+##### quantifies the amount of space or memory taken by an algorithm to run as a function of the length of the input
 
 
 # Solution guidelines 
