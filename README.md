@@ -7,6 +7,7 @@
 | [Heaps](Linked%20Lists/) | [Merge Sort](Searching/) | [Duynamic Progrmming](Searching/) |
 | [Vectors/ArrayLists](Linked%20Lists/) | [Quick Sort](Searching/) | [Big O Time & Space](Searching/) |
 | [Hash Tables](Linked%20Lists/) |  |  |
+| [Arrays](Linked%20Lists/) |  |  |
 
 
 # [Time and Space Complexity](https://www.hackerearth.com/practice/basic-programming/complexity-analysis/time-and-space-complexity/tutorial/)
