@@ -109,10 +109,16 @@
 `=> k = log2 (n)`
 ####  Binary Search Algorithm whose complexity is O(log n). 
 # Depth First Search
-### DFS is technique used for traversing tree or graph. Here backtracking is used for traversal. In this traversal first the deepest node is visited and then backtracks to it’s parent node if no sibling of that node exist. 
+#### DFS is technique used for traversing tree or graph. Here backtracking is used for traversal. In this traversal first the deepest node is visited and then backtracks to it’s parent node if no sibling of that node exist. 
 
-## DFS Traversal of a Graph vs Tree
-##### In graph, there might be cycles and dis-connectivity. Unlike graph, tree does not contain cycle and always connected. So DFS of a tree is relatively easier. We can simply begin from a node, then traverse its adjacent (or children) without caring about cycles. And if we begin from a single node (root), and traverse this way, it is guaranteed that we traverse the whole tree as there is no dis-connectivity,
+## DFS Traversal of a Graph vs Tree -> Typically Recursive requires  function called overhead 
+### Depth first traversals 
+#### Inorder TRaversal(left-root-right)
+#### Preorder Traversal(Right-Root-Left)
+#### PostOrder TRaversal(Left-Right-Root)
+
+
+###### In graph, there might be cycles and dis-connectivity. Unlike graph, tree does not contain cycle and always connected. So DFS of a tree is relatively easier. We can simply begin from a node, then traverse its adjacent (or children) without caring about cycles. And if we begin from a single node (root), and traverse this way, it is guaranteed that we traverse the whole tree as there is no dis-connectivity,
 
 ## Example
                  (1)
@@ -126,5 +132,18 @@
  ##### b) preOrder(Root, left, right): 1 2 4 5 3
  ##### c) PostOrder(left, right, root): 4 5 2 3 1
  
- ## Time Complexity: O(n)
+ ## Time Complexity: O(n) -> where n is the depth of the tree or graph
 #### Auxiliary Space: If we don’t consider size of stack for function calls then O(1) otherwise O(n)
+
+## BFS Traversal of a Graph vs Tree
+#### for Breadth First traversal of the tree above :
+#### BFS: 1 2 3 4 5
+
+
+## Time & Space complexity 
+
+### Time Complexity * (four) traversal methods require O(n) time as they visit each node once 
+### Space Complexity 
+#### Extra space is required for level order traversal  is O(w) where w is the maximum width of the binary tree
+#### Extra space is required for Depth first traversal  is O(H) where H is the maximum height of the binary tree
+
