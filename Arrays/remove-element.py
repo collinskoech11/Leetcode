@@ -18,3 +18,18 @@ class Solution:
             else:
                 start += 1
         return start 
+
+    
+class Solutiontwo:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        if len(nums) == 1:# check the length of the array
+            if nums[0] == val:
+                return 0# if first element = va return false
+            else:
+                return 1# return true
+        count = 0
+        for i in range(len(nums)):
+            if nums[i] != val:
+                nums[count] = nums[i]
+                count+=1
+        return count
