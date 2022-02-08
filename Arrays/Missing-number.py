@@ -15,3 +15,7 @@ class Solution:
 # 3rd iteration -> res = (2)
 # i = 2 
 # res = i-nums[i] + res => 2-1 + 1 = 2
+
+class Solution:
+    def missingNumber(self, nums:List[int]) -> int:
+        return (((len(nums))*(len(nums)+1))//2) -sum(nums)
