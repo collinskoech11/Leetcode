@@ -8,7 +8,7 @@
 | [Vectors/ArrayLists](Linked%20Lists/) | [Quick Sort](Searching/) | [Big O Time & Space](Searching/) |
 | [Hash Tables](Linked%20Lists/) |  |  |
 | [Arrays](Linked%20Lists/) |  |  |
-### check if git installation worked
+
 
 # [Time and Space Complexity](https://www.hackerearth.com/practice/basic-programming/complexity-analysis/time-and-space-complexity/tutorial/)
 ### Time Complexity -> 
