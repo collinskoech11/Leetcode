@@ -10,11 +10,12 @@ Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
 """"
 class Solution:
     def permuteUnique(elf, nums:List[int]) -> List[List[int]]:
-        res = []
-        perm = []
-        count = Counter(nums)
-        def dfs():
-            if len(perm) == len(perm):
+        res = []# store the list of all permutations 
+        perm = []# store each urrent permutation 
+        count = Counter(nums)# use counter to check for duplicates 
+        def dfs():# Backtracking fx
+            if len(perm) == len(perm):# Base case 
+                res.append(perm.copy())
                 return
             for i in count:
                 if count[n] > 0:
