@@ -12,9 +12,9 @@ Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0
 class Solution:
     # solution using a single for loop O(N) runtime O(1) space complexity -> we only allocate space for res once 
     def missingNUmber(self, nums:List[int]) -> int:
-        res = len(nums)
-        for i in range(len(nums)):
-            res += i - nums[i]
+        res = len(nums)#initialize res to the lenth of the array
+        for i in range(len(nums)):#traverse through the entire array
+            res += i - nums[i]# sum the difference of the index to and the value in nums sat that index
         return res
 # [3,0,1] res = 3
 # 1st iteration -> res = (0)
