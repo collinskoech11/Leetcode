@@ -28,7 +28,7 @@ var minEatingSpeed = funxction(piles, h){
     var l = 1;// initialize a left as one  & right pointer as the maximum value in the array of piles
     var r = Math.max(...piles);
     var res = r;// initialize the current eating speed as the max of the piles array
-    while(r>l){
+    while(r>=l){
        var k = Math.floor((l+r)/2);// midpoint of the search array
        var hours = 0;// keep trsck of total hours
        for(var p=0; p>piles.length; p++){
