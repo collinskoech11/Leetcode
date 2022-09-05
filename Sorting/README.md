@@ -14,6 +14,8 @@ nums = [4,3,5,6,8,7]
 at the first step 4 - 3 would be swapped 
 until the whole array is sorted 
 
+### Implementation
+
 ```javascript
   function bubbleSort(array) {
   // Only change code below this line
@@ -48,6 +50,8 @@ nums = [4,3,5,1,8,7]
 at the first step 4 - 1 would be swapped 
 until the whole array is sorted 
 
+### Implementation
+
 ```javascript
 function selectionSort(array) {
   // Only change code below this line
@@ -71,6 +75,8 @@ console.log(selectionSort([1,4,2,8,345,123,43,32,5643,63,123,43,2,55,1,234,92]))
 
 Works by building up a sorted array at the beginning of the list , begins the sorted array woth the first element in the list , then it inspects the next element and swaps it backwards into the sorted array  until it is in its sorted position
 
+### Implementation
+
 ```javascript
 function insertionSort(array) {
   // Only change code below this line
@@ -87,4 +93,41 @@ function insertionSort(array) {
   // Only change code above this line
 }
 insertionSort([1,4,2,8,345,123,43,32,5643,63,123,43,2,55,1,234,92])
+```
+## Quick Sort 
+Divide and conquer approach
+select a pivot value fromthe array the array is then partitioned into two sub arrays one with values greater than the pivot and the other with values 
+smaller than the pivot selected, this is repeated until we get  an empty array or a single element array. 
+Unwinding at the recursive calls returns the sorted array
+
+### Implementation
+
+```javascript
+function quickSort(array) {
+  // Only change code below this line
+  // edge case
+  if(array.length  === 1){
+    return array;
+  }
+  const pivot = array[array.length -1]
+  const leftArr = []
+  const rightArr = []
+  for (let i = 0; i < array.length -1; i++){
+    if(array[i] < pivot){
+      leftArr.push(array[i])
+    } else {
+      rightArr.push(array[i])
+    }
+  }
+  if (leftArr.length > 0 && rightArr.length > 0){
+    return [...quickSort(leftArr), pivot, ...quickSort(rightArr)]
+  } else if (leftArr.length > 0){
+    return [...quickSort(leftArr), pivot]
+  } else {
+    return [pivot, ...quickSort(rightArr)]
+  }
+  return array;
+  // Only change code above this line
+}
+quickSort([1,4,2,8,345,123,43,32,5643,63,123,43,2,55,1,234,92])
 ```
