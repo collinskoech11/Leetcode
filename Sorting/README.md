@@ -38,7 +38,7 @@ console.log(bubbleSort([1,4,2,8,345,123,43,32,5643,63,123,43,2,55,1,234,92]))
 Time Complexity => O(n^2)
 Space complecity => O(1)
 
-## Insertion Sort
+## Selection Sort
 
 Involves selecting the minimum value in a list and swapping it with the first value in the list Then repeats the same process but starting at the second value in the list
 
