@@ -28,6 +28,17 @@
 | **<= [1M]** | [O(N*logN)] | 
 | **<= [100M]** | [O(N),O(logN),O(1)] | 
 
+| Name | Notation | 
+| :-- | :-- | 
+| Contant | [O(1)] | 
+| Logarithmic| [O(log(N))] | 
+| Linear | [O(N)] | 
+| Log-Linear | [O(N log(N))] | 
+| Quadratic | [O(N^2)] | 
+| Cubic | [O(N^3)] | 
+| Exponential | [O(2^N)] | 
+| Factorial | [O(N!)] | 
+
 ### Space Complexity -> 
 
 ##### quantifies the amount of space or memory taken by an algorithm to run as a function of the length of the input
