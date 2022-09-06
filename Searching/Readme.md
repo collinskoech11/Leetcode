@@ -258,9 +258,25 @@ Extra space is required for Depth first traversal  is O(H) where H is the maximu
 
 ### Calculate the sum of all node.vals of the tree
 ```javascript
+// Recursive
 const treeSum = (root) => {
     if(root === null) return 0;
     return root.val + root.valtreeSum(root.left) + treeSum(root.right);
+}
+```
+```javascript
+// Iterative
+const treeSum = (root) => {
+    if(root === null) return 0;
+    const queue = [ root ]
+    let totalSum = 0
+    while (queue.length > 0){
+        const current = queue.shift()
+        totalSum += current.val
+        if(current.left !== null) queue.push(current.left)
+        if(current.right !== null) queue.push(current.right)
+    }
+    return totalSum;
 }
 ```
 
