@@ -251,8 +251,17 @@ treeIncludes(a, "e") // check if the tree a includes "e"
 ```
 ## Time & Space complexity 
 
-### Time Complexity * (four) traversal methods require O(n) time as they visit each node once 
-### Space Complexity 
-#### Extra space is required for level order traversal  is O(w) where w is the maximum width of the binary tree
-#### Extra space is required for Depth first traversal  is O(H) where H is the maximum height of the binary tree
+Time Complexity * (four) traversal methods require O(n) time as they visit each node once 
+Space Complexity 
+Extra space is required for level order traversal  is O(w) where w is the maximum width of the binary tree
+Extra space is required for Depth first traversal  is O(H) where H is the maximum height of the binary tree
+
+### Calculate the sum of all node.vals of the tree
+```javascript
+const treeSum = (root) => {
+    if(root === null) return 0;
+    return root.val + root.valtreeSum(root.left) + treeSum(root.right);
+}
+```
+
 
