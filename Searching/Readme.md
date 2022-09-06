@@ -111,6 +111,37 @@
 # Depth First Search
 #### DFS is technique used for traversing tree or graph. Here backtracking is used for traversal. In this traversal first the deepest node is visited and then backtracks to it’s parent node if no sibling of that node exist. 
 
+## Declaring a binary tree
+```javascript
+class Node {
+    constructor(val) {
+        this.val = val;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+
+const a = new Node('a');
+const b = new NOde('b');
+const c = new NOde('c');
+const d = new Node('d');
+const e = new Node('e');
+const f = new Node('f');
+
+a.left = b
+a.right = c
+b.left = d
+b.right = e;
+c.right = f;
+
+                 (a)
+               /     \
+             (b)     (c)
+            /   \       \
+          (d)   (e)     (f)
+```
+
 ## DFS Traversal of a Graph vs Tree -> Typically Recursive requires  function called overhead 
 ### Depth first traversals 
 #### Inorder TRaversal(left-root-right)
