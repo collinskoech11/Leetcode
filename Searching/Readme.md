@@ -214,6 +214,8 @@ const depthFirstSearch = (root) => {
 #### Auxiliary Space: If we don’t consider size of stack for function calls then O(1) otherwise O(n)
 
 ## BFS Traversal of a Graph vs Tree
+
+In breadth first search we make use of the queue data structure which allows us to add elements to the back and leave from the front 
 ```javascript
                  (1)
                /     \
