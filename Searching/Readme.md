@@ -256,6 +256,7 @@ Space Complexity
 Extra space is required for level order traversal  is O(w) where w is the maximum width of the binary tree
 Extra space is required for Depth first traversal  is O(H) where H is the maximum height of the binary tree
 
+## Example Test case 
 ### Calculate the sum of all node.vals of the tree
 ```javascript
 // Recursive
@@ -277,6 +278,24 @@ const treeSum = (root) => {
         if(current.right !== null) queue.push(current.right)
     }
     return totalSum;
+}
+```
+### Calculate the minimum value within the binary tree
+```javascript
+// Breadth First Search
+// Iterative
+const treeMinValue = (root) => {
+    //todo 
+    let smallest = Infinity;
+    const stack = [root];
+    while(stack.length>0){
+        const current = stack.pop();
+        if(current.val < smallest) smallest = current.val
+
+        if(current.left !== null) stack.push(current.left)
+        if(current.right !== null) stack.push(current.right)
+    }
+    return smallest
 }
 ```
 
