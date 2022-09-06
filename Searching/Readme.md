@@ -143,10 +143,57 @@ c.right = f;
 ```
 
 ## DFS Traversal of a Graph vs Tree -> Typically Recursive requires  function called overhead 
+Dfs uses a stack data structure 
+a stack is a data structure that only allows us to pop from or append to the top of the stack
+```javascript
+const depthFirstSearch = (root) => {
+    const stack = [root]
+    while (stack.length > 0) {
+        const current = stack.pop()
+        console.log(current.val);
+        
+        if(current.left) stack.push(current.left)
+        if(current.right) stack.push(current.right)
+    }
+}
+```
+#### DFS using recursion
+```javaxcript
+const depthFirstSearch = (root) => {
+    if(root === null) return []
+    const leftValues = depthFirstSearch(root.left)
+    const rightValues = depthFirstSearch(root.right)
+    return [root.val, ...leftValues, ...rightValues]
+}
+```
 ### Depth first traversals 
 #### Inorder TRaversal(left-root-right)
+```javaxcript
+const depthFirstSearch = (root) => {
+    if(root === null) return []
+    const leftValues = depthFirstSearch(root.left)
+    const rightValues = depthFirstSearch(root.right)
+    return [...leftValues, root.val, ...rightValues]
+}
+```
 #### Preorder Traversal(Right-Root-Left)
+```javaxcript
+const depthFirstSearch = (root) => {
+    if(root === null) return []
+    const leftValues = depthFirstSearch(root.left)
+    const rightValues = depthFirstSearch(root.right)
+    return [...rightValues, root.val, ...leftValues]
+}
+```
 #### PostOrder TRaversal(Left-Right-Root)
+```javaxcript
+const depthFirstSearch = (root) => {
+    if(root === null) return []
+    const leftValues = depthFirstSearch(root.left)
+    const rightValues = depthFirstSearch(root.right)
+    return [...leftValues,...rightValues, root.val ]
+}
+```
 
 
 ###### In graph, there might be cycles and dis-connectivity. Unlike graph, tree does not contain cycle and always connected. So DFS of a tree is relatively easier. We can simply begin from a node, then traverse its adjacent (or children) without caring about cycles. And if we begin from a single node (root), and traverse this way, it is guaranteed that we traverse the whole tree as there is no dis-connectivity,
