@@ -240,6 +240,15 @@ const breadthFirstSearch = (root) => {
     return values
 }
 ```
+### Recursive Implementation
+```javascript
+const treeIncludes = (root, target) => {
+    if(root == null) return false;
+    if(root.val === target) return true
+    treeInculdes(root.left, target) || treeIncludes(root.right, target);
+}
+treeIncludes(a, "e") // check if the tree a includes "e"
+```
 ## Time & Space complexity 
 
 ### Time Complexity * (four) traversal methods require O(n) time as they visit each node once 
