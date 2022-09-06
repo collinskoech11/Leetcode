@@ -7,6 +7,7 @@
 ### iv) if x is smaller than the middle element we traverse through the left side 
 ### * each time we shift the L or R pointer towards the location of x
 ### * if r becomes < than l then the element is not in the array
+```python
     l,r = 0, len(nums)-1
     if r >= l:
  
@@ -30,7 +31,7 @@
     else:
         # Element is not present in the array
         return -1
-        
+```
 ### Complexity analysis for Binary Search
 `Sorted Array of 10 elements: 2, 5, 8, 12, 16, 23, 38, 56, 72, 91`
 
@@ -158,7 +159,7 @@ const depthFirstSearch = (root) => {
 }
 ```
 #### DFS using recursion
-```javaxcript
+```javascript
 const depthFirstSearch = (root) => {
     if(root === null) return []
     const leftValues = depthFirstSearch(root.left)
@@ -168,7 +169,7 @@ const depthFirstSearch = (root) => {
 ```
 ### Depth first traversals 
 #### Inorder TRaversal(left-root-right)
-```javaxcript
+```javascript
 const depthFirstSearch = (root) => {
     if(root === null) return []
     const leftValues = depthFirstSearch(root.left)
@@ -177,7 +178,7 @@ const depthFirstSearch = (root) => {
 }
 ```
 #### Preorder Traversal(Right-Root-Left)
-```javaxcript
+```javascript
 const depthFirstSearch = (root) => {
     if(root === null) return []
     const leftValues = depthFirstSearch(root.left)
@@ -186,7 +187,7 @@ const depthFirstSearch = (root) => {
 }
 ```
 #### PostOrder TRaversal(Left-Right-Root)
-```javaxcript
+```javascript
 const depthFirstSearch = (root) => {
     if(root === null) return []
     const leftValues = depthFirstSearch(root.left)
