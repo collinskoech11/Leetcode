@@ -160,6 +160,13 @@ const depthFirstSearch = (root) => {
 ```
 #### DFS using recursion
 ```javascript
+                 (1)
+               /     \
+             (2)     (3)
+            /   \    
+          (4)   (5)
+```
+```javascript
 const depthFirstSearch = (root) => {
     if(root === null) return []
     const leftValues = depthFirstSearch(root.left)
@@ -176,6 +183,7 @@ const depthFirstSearch = (root) => {
     const rightValues = depthFirstSearch(root.right)
     return [...leftValues, root.val, ...rightValues]
 }
+// a) inOrder(left, root, right): 4 2 5 1 3
 ```
 #### Preorder Traversal(Right-Root-Left)
 ```javascript
@@ -185,6 +193,7 @@ const depthFirstSearch = (root) => {
     const rightValues = depthFirstSearch(root.right)
     return [...rightValues, root.val, ...leftValues]
 }
+//  b) preOrder(Root, left, right): 1 2 4 5 3
 ```
 #### PostOrder TRaversal(Left-Right-Root)
 ```javascript
@@ -194,31 +203,41 @@ const depthFirstSearch = (root) => {
     const rightValues = depthFirstSearch(root.right)
     return [...leftValues,...rightValues, root.val ]
 }
+// c) PostOrder(left, right, root): 4 5 2 3 1
 ```
 
 
 ###### In graph, there might be cycles and dis-connectivity. Unlike graph, tree does not contain cycle and always connected. So DFS of a tree is relatively easier. We can simply begin from a node, then traverse its adjacent (or children) without caring about cycles. And if we begin from a single node (root), and traverse this way, it is guaranteed that we traverse the whole tree as there is no dis-connectivity,
 
-## Example
-                 (1)
-               /     \
-             (2)     (3)
-            /   \    
-          (4)   (5)
-          
- #### Therefore in depth first search Traversal of this tree will be 
- ##### a) inOrder(left, root, right): 4 2 5 1 3
- ##### b) preOrder(Root, left, right): 1 2 4 5 3
- ##### c) PostOrder(left, right, root): 4 5 2 3 1
  
  ## Time Complexity: O(n) -> where n is the depth of the tree or graph
 #### Auxiliary Space: If we don’t consider size of stack for function calls then O(1) otherwise O(n)
 
 ## BFS Traversal of a Graph vs Tree
+```javascript
+                 (1)
+               /     \
+             (2)     (3)
+            /   \    
+          (4)   (5)
+```
 #### for Breadth First traversal of the tree above :
 #### BFS: 1 2 3 4 5
-
-
+### Implementation (Iteratively)
+```javascript
+const breadthFirstSearch = (root) => {
+    if(root === null) return [];
+    const queue = [root]
+    const values = [];
+    while(queue.length > 0) {
+        const current = queue.shift()
+        values.push(current)
+        if(current.left !== null) queue.push(current.left);
+        if(current.right == null) queue.push(current.right);
+    }
+    return values
+}
+```
 ## Time & Space complexity 
 
 ### Time Complexity * (four) traversal methods require O(n) time as they visit each node once 
