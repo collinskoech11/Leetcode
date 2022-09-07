@@ -110,6 +110,16 @@ const findElem = (head, target) => {
     findElem(head.next, 
 }
 ```
+## get the node value at a specific index 
+- given a linked list and an index return the value at the index provided 
+=> Steps 
+- create function that takes in a linked list and an index 
+- return false if the head is null
+- initialize a counter to keep track of what index we are currently at 
+- initialize a var current to keep track of the the current node 
+- create a while loop that only runs if current is not null
+- Inside the while lop check if counter == index, if so return its val
+- outside the if statement increment the counter and set the current to current.next
 
 | Problem | My Solution | Review status |
 | :-- | :-- | :-- |
