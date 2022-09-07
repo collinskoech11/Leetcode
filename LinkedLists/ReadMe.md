@@ -1,4 +1,80 @@
-# LInked Lists
+# Linked Lists
+
+A linked list is basically a data structure made up of nodes that are connected  to each other, each node can be thought of as a container of data 
+THe difference between a linked list and an array is that an array must be stored contiguously in memory(next to each other) => Insertion has an O(n) runtime , while in a linked list youd create a new node which will exist anywhere in memory, and only adjus two pointers to accomondate the new node . 
+
+## Types of Linked lists
+- Singly Linked List
+- Doubly LInked List
+
+## Traverse through a Singly linked list 
+- first we need a current variable, which will initially reffer to the head of the linked list .
+- To go to the next node of the linked list we will refference current.next
+- stop when curent is null
+```
+  (a) -> (b) -> (c) -> (d)
+  |       |
+current   |
+      current.next
+```
+## Linked Listt Implementation 
+```javascript
+class Node {
+    constructor(val) {
+        this.val = val;
+        this.next = null;
+    }
+}
+
+
+const a = new Node('A');
+const b = new Node('B');
+const c = new Node('C');
+const d = new Node('D');
+
+a.next = b;
+b.next = c;
+c.next = d;
+
+// (A) -> (B) -> (C) -> (D) -> NULL
+
+```
+## Traversal Algorithm
+```javascript
+const printLinkedList = (head) => {
+    let current = head;
+    while(current !== null){
+        console.log(current.val)
+        current = current.next;
+    };
+};
+printLinkedList(a);
+```
+## Traversal Using recursion
+```javascript
+const printLInkedListRecursively = (head) => {
+    if(haad === null) return;
+    console.log(head.val);
+    printLinkedLIstRecursively(head.next)
+};
+printLInkedLIstRecursively(a)
+```
+### Building an array with values from a linked list -> recursively
+```javascript
+const linkedList = (head) => {
+    const values = []
+    fillValues(head, values)
+    return values;
+}
+const fillValues = (head, values) => {
+    if(head === null){
+        return;
+    }
+    values.push(head.val);
+    fillValues(head.next, values);
+}
+```
+
 | Problem | My Solution | Review status |
 | :-- | :-- | :-- |
 | **linked list cycle** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
