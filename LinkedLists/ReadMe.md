@@ -146,6 +146,40 @@ const getNodeVal = (head, index) => {
 }
 console.log(getNodeVal(a, 2))
 ```
+## Reversing a linked list
+- The solution to this problem is to shift all pointers to point backwards esentially reversing the linked list
+```
+Initial list = (a) -> (b) -> (c) -> (d)
+reversed list = (a) <- (b) <- (c) <- (d) which is the same as (d) -> (c) -> (b) -> (a)
+```
+- for this we are going to ned three variables
+    - prev : initially set to null
+    - current : initially set to the head of the linked list
+    - next :  set to current.next within the while loop
+```
+null -> (a) -> (b) -> (c)
+prev    curr    next       => first iteration
+```
+
+- outside the loop we need to declare prev and current using let key word since we are going to be continuallly update within the function 
+- while the current is not equal to null set next to current.next 
+- set curent.next to prev to actually reverse the pointer
+- update prev to current 
+- update current to next (then repeat the whole process till current = null)
+- at this point the whole linked list is reversed
+
+```javascript
+const reverseLinkedList = (head) => {
+    let prev = null;
+    let current = head;
+    while(current!==null){
+        const next = current.next;
+        current.next = prev;
+        prev = current;
+        current = next
+    }
+}
+```
 
 | Problem | My Solution | Review status |
 | :-- | :-- | :-- |
