@@ -17,7 +17,7 @@ THe difference between a linked list and an array is that an array must be store
 current   |
       current.next
 ```
-## Linked Listt Implementation 
+## Linked List Implementation 
 ```javascript
 class Node {
     constructor(val) {
@@ -111,7 +111,7 @@ const findElem = (head, target) => {
 }
 ```
 ## get the node value at a specific index 
-- given a linked list and an index return the value at the index provided 
+- given a the head of a linked list and an index return the value at the index provided 
 ### Steps 
 - create function that takes in a linked list and an index 
 - return false if the head is null
@@ -122,7 +122,7 @@ const findElem = (head, target) => {
 - outside the if statement increment the counter and set the current to current.next
 
 ```javascript
-const getNodeVal = (head, index0 => {
+const getNodeVal = (head, index) => {
   if(head == null) return null;
   let counter = 0;
   let current = head;
