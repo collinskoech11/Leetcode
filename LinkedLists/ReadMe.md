@@ -181,6 +181,17 @@ const reverseLinkedList = (head) => {
 }
 ```
 
+### recursive approach
+```
+const reverseLInkedList = (head, prev = null) => {
+    if(head === null) return prev
+    const next  = head.next;
+    head.next = prev;
+    return reverseLinkedList(next, head)
+}
+reverseLinkedList(a)
+```
+
 | Problem | My Solution | Review status |
 | :-- | :-- | :-- |
 | **linked list cycle** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
