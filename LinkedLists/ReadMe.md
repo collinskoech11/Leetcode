@@ -135,7 +135,16 @@ const getNodeVal = (head, index) => {
   }
 }
 console.log(getNodeVal(a, 2))
+```
 
+### Recursive approach
+```javascript
+const getNodeVal = (head, index) => {
+    if(head === null) return null;
+    if(index === 0) return head.val; 
+    return getNodeVal(head.next, index -1)
+}
+console.log(getNodeVal(a, 2))
 ```
 
 | Problem | My Solution | Review status |
