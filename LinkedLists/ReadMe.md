@@ -74,6 +74,16 @@ const fillValues = (head, values) => {
     fillValues(head.next, values);
 }
 ```
+### Getting the sum of values in a linked list
+- for this case we are going to assume that the linked list we built earlier has integer values instead of letters , then we are going to compute the sum of the node values recursively
+```javascript
+const sumList = (head) => {
+  if(head == null) return 0;
+  const sum = head.val + sumList(head.next)
+  return sum
+}
+console.log(sumList(a))
+```
 
 | Problem | My Solution | Review status |
 | :-- | :-- | :-- |
