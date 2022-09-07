@@ -182,7 +182,7 @@ const reverseLinkedList = (head) => {
 ```
 
 ### recursive approach
-```
+```javascript
 const reverseLInkedList = (head, prev = null) => {
     if(head === null) return prev
     const next  = head.next;
