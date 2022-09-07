@@ -84,6 +84,32 @@ const sumList = (head) => {
 }
 console.log(sumList(a))
 ```
+### find a target in a linked list
+- traverse through the linked list 
+- in each iteration check if the current.val is equal to the target => if so return true
+- If we get to the end of the list => return false
+```javascript
+const findElem = (head, target) => {
+    let current = head;
+    while(current !== null){
+        if(current.val == target){
+            return true
+        }
+        current = current.next;
+    }
+    return false;
+}
+findElem(a, 3)
+//returns false
+```
+#### recursive implementation
+```javascript
+const findElem = (head, target) => {
+    if(head === null) return false;
+    if(head.val == target) return true;
+    findElem(head.next, 
+}
+```
 
 | Problem | My Solution | Review status |
 | :-- | :-- | :-- |
