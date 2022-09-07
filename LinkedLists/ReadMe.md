@@ -192,6 +192,34 @@ const reverseLInkedList = (head, prev = null) => {
 reverseLinkedList(a)
 ```
 
+## Zipped Lists
+for this problem we are given two linked lists and the solution is to merge the two lists in alternating order of nodes, Note that if one linked list is longer than the other all we do is continue with the longer list after reaching the end of the shorter list .
+```
+// example
+(a) -> (b) -> (c) -> (d) and (v) -> (w) -> (x) -> (y)
+returns 
+(a) -> (v) -> (b) -> (w) -> (c) -> (x) -> (d) -> (y)
+```
+### steps 
+- we are going to initialize two pointers current1, current2 starting at the head for both linked lists respecively 
+
+```javascript
+const zipperLists = (head1, head2) => {
+    if (head1 === null &&  head2 == null) return null;
+    if (head1 === null) return head2
+    if (head2 === null) return head1
+
+    const next1 = head1.next
+    const next2 = head2.next;
+    head1.next = head2
+
+    head2.next = zipperLists(next1,next2)
+
+    return head1
+}
+console.log(zipperLists(a, v))
+```
+
 | Problem | My Solution | Review status |
 | :-- | :-- | :-- |
 | **linked list cycle** | [Accepted](solutions/202.%20Happy%20Number.md) | Reviewed |
