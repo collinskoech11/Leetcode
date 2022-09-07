@@ -135,6 +135,7 @@ const getNodeVal = (head, index) => {
   }
 }
 console.log(getNodeVal(a, 2))
+
 ```
 
 | Problem | My Solution | Review status |
