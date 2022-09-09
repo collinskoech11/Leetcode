@@ -17,7 +17,7 @@ THe difference between a linked list and an array is that an array must be store
 current   |
       current.next
 ```
-## Linked List Implementation 
+## Singly Linked List Implementation 
 ```javascript
 class Node {
     constructor(val) {
@@ -110,6 +110,7 @@ const findElem = (head, target) => {
     findElem(head.next, 
 }
 ```
+
 ## get the node value at a specific index 
 - given a the head of a linked list and an index return the value at the index provided 
 ### Steps 
@@ -219,6 +220,51 @@ const zipperLists = (head1, head2) => {
 }
 console.log(zipperLists(a, v))
 ```
+## Doubly Liked List Implementation 
+Ulinlike a singly linked list a doubly linked list points to the next node and the previous node,hence the name doubly linked
+```
+    ->      ->
+(A)     (b)    (C)
+    <-      <-    
+```
+
+```javascript
+class Node {
+    constructor(val) {
+        this.val = val;
+        this.prev = null;
+        this.next = null;
+    }
+}
+```
+Now that weve defined the node class lets go ahead and create our doubly linked lits and add values to it
+```javascript
+class DoublyLinkedList {
+    constructor() {
+        this.head = null;
+        this.tail = null;
+        this.length = 0;
+    }
+    push(val) {
+        let node = new Node(val)
+        if(!this.head){
+            this.head = node;
+            this.tail = node;
+        } else {
+            let temp = this.tail;
+            this.tail = node;
+            node.prev = temp;
+            temp.next = node;
+        }
+        this.length ++;
+        return this;
+    }
+}
+let list = new DoublyLinkedList;
+```
+
+
+
 
 | Problem | My Solution | Review status |
 | :-- | :-- | :-- |
