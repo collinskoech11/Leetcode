@@ -229,7 +229,7 @@ example of a linked list with a cycle
               (f) <- (e)
 
 ```
-To solve this we are going to use floyds cycle detection algorithm , (think of it as just using fast and slow pointers
+To solve this we are going to use floyds cycle detection algorithm(Hare and tortoise Algorithm) , think of it as just using fast and slow pointers
 ### Steps
 - initialize fast and slow pointers
 - while head && head.next are not null 
