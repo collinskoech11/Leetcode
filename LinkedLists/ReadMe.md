@@ -220,6 +220,39 @@ const zipperLists = (head1, head2) => {
 }
 console.log(zipperLists(a, v))
 ```
+## Linked List Cycle
+Given the head of a linked list return true if the linked list links back  to itself and false if it doesnt
+```
+example of a linked list with a cycle
+(a) -> (b) -> (c) -> (d)
+               |      |
+              (f) <- (e)
+
+```
+To solve this we are going to use floyds cycle detection algorithm , (think of it as just using fast and slow pointers
+### Steps
+- initialize fast and slow pointers
+- while head && head.next are not null 
+- set the next fast pointer as fast.next.next and slow as slow.next
+- if fast and slow are pointing to the same node, return true
+- if the while comes to an end return false as there is no cycle
+
+### Implementation 
+```javascript
+var hasCycle = function(head) {
+    let slow = head;
+    let fast = head;
+    while(head){
+        fast = fast.next.next;
+        slow = slow.next;
+        if(fast == second){
+            return true;
+        }
+    }
+    return false;
+}
+```
+
 ## Doubly Liked List Implementation 
 Ulinlike a singly linked list a doubly linked list points to the next node and the previous node,hence the name doubly linked
 ```
