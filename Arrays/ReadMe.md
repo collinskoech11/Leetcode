@@ -14,11 +14,11 @@ Note that you may not  slant the container.
 
 ### Naive approach 
 Steps 
-    - initialize the max_volume as 0
-    - run two nested loops on with i and the other with j (let j start as i+1) => to reduce the number of times we go through the loop
-    - calculate the current volume as (Math.min(height[i], height[j]) * (j -i)
-    - get the max volume by comparing the current_volume and the maximum_volume  => Math.max(volume,  current_volume)
-    - outside the nested loops return the volume
+ - initialize the max_volume as 0
+ - run two nested loops on with i and the other with j (let j start as i+1) => to reduce the number of times we go through the loop
+ - calculate the current volume as (Math.min(height[i], height[j]) * (j -i)
+ - get the max volume by comparing the current_volume and the maximum_volume  => Math.max(volume,  current_volume)
+ - outside the nested loops return the volume
     
 ##### Implementation 
 ```javascript
